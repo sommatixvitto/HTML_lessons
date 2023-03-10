@@ -1,5 +1,187 @@
-<h1>Titolone</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Qui mettiamo tutti quei dati che servono al bwoser e che l'utente finale non vedrà-->
+        <title>La mia prima pagina html</title>
+        <style>
+            p {
+                background-color: orange;
+                padding: 30px;
+            }
+            #title_1 {
+                color: pink;
+            }
 
-Ciao
+            .text_red{
+                color: red;
+            }
+            .text_green {
+                color: green;
+            }
+        </style>
+        <!-- questo viene visto anche da Google. Questo è il testo visto nella tab-->
+    </head>
+    <body>
+        <!-- qui mettiamo tutto il codice scritto fin'ora-->
+        
+        <!-- Intestazioni-->
+        <h1 
+        id="title_1"
+        style=
+        "background-color: rgb(0, 255, 34);">
+            Titolo 1
+        </h1>
+        <!-- Questo è un commento-->
+        <h2 class="text_red">Titolo 2</h2>
+        <h3 class="text_green">Titolo 3</h3>
+        <h4 class="text_red">Titolo 4</h4>
+        <h5 class="text_green">Titolo 5</h5>
+        <h6 class="text_red">Titolo 6</h6>
+        
+        <!-- Paragrafi-->
+        <p class="bg_red text_green prova 1 e prova 2"> 
+            Prima riga
+        </p>
+        <p>
+            Seconda riga
+        </p>
+        <p>
+            Terza Riga
+        </p>
+        
+        <p id="paragrafo_loremIpsum">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris scelerisque condimentum ullamcorper. Vivamus finibus condimentum leo et sodales. Aliquam in dignissim est, at consectetur turpis. Ut blandit tortor id nisl laoreet ullamcorper. Praesent consectetur, quam nec finibus viverra, est odio sollicitudin velit, vitae varius mi augue non mi. Sed in porta erat. In at fermentum velit. Sed a malesuada mauris. Aenean vitae massa mi. Curabitur a tortor dictum, accumsan eros ac, pulvinar ante.
+        
+        
+        </p>
+        
+        
+        Riga uno <br> 
+        Riga due
+        
+        <hr>
+        riga tre
+        
+        <hr>
+        
+        <p>
+            Questa è una parola in <b>grassetto</b>,
+            questa è una parola <i>corsivo</i>;
+            questa è una parola <u>sottolineata</u>
+        </p>
+        
+        <p>
+            posso usare altre due tag <br>
+            <strong>strong per grassetto</strong><br>
+            anche  <em> em per il corsivo</em>
+        
+        </p>
+        <!-- I link-->
+        <h2>I link</h2>
+        
+        <a href="https://www.theodinproject.com/paths/full-stack-javascript?"> Questo è un link</a> <br>
+        
+        <a target="_blank" href="https://www.theodinproject.com/paths/full-stack-javascript?"> Questo è un link</a>
+        
+        <hr>
+        <img src="img/topina.jpeg" width="500px">
+        
+        <img src="https://www.ilmattino.it/photos/MED_LOW/89/59/4378959_1358_ansa.jpg" width="200">
+        
+        <br>
+         <!-- I video-->
+        <video width="180px" controls>
+            <source src="vid/Jubilife_Social.mp4" type="video/mp4">
+            not support, sry :)
+        </video>
+        <hr>
+        <h1>Liste</h1>
+         <!-- Gli elenchi-->
+        <p>
+            <h3>Elenco non numerato</h3>
+            Lista della spesa: <br>
+            <ul>
+                <li>latte</li>
+                <li>biscotti</li>
+                <li>patatine</li>
+                <li>arance</li>
+            </ul>
+        </p><br>
+        <p>
+            <h3>Elenco numerato</h3><br>
+            Lista delle spesa: <br>
+            <ol>
+                <li>ciambelle</li>
+                <li>sapone</li>
+                <li>deterivo</li>
+            </ol>
+        
+        </p>
+         <!-- Gli embed-->
+        <h2>Embed</h2>
+        
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/IPii4ML-s_I" title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <blockquote class="twitter-tweet"><p 
+            lang="it" 
+            dir="ltr">Finito di vedere The Last Dance<br><br>Pensate anche voi, come affermato nella docuserie, che MJ sia stato il più grande sportivo della storia?<br><br>Ragionandoci non conosco nessuno il cui cognome sia anche il nome di un- scarpa in voga ancora oggi (figlio senior le ha chieste per regalo)</p>&mdash; AKirA (@SimoneAKirA) 
+            <a href="https://twitter.com/SimoneAKirA/status/1633037202367164418?ref_src=twsrc%5Etfw">March 7, 2023</a></blockquote> 
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+         <!-- Style. Un pre css-->
+            <p style="
+                    color:red; 
+                    background-color: yellowgreen; 
+                    font-style: oblique;
+                    width: 50%;
+                    height: 30px;
+                    margin: 25%;
+                    padding:10px;
+        
+                    ">
+                Salve, sono Vittorio e sono un musicista
+            </p>
+        
+        <div style="
+                    background-color: cadetblue;
+                    padding: 5%;
+                    ">
+            
+            <div style="
+                        background-color: coral;
+                        margin-bottom: 30px;">
+                <h1> Questo è un contenitore</h1>
+            </div>
+                    <div style="background-color: rgb(160, 37, 171);">
+                        <p>
+                            Questo è un contenitore dentro un contenitore e contiene un paragrafo
+                        </p>
+                    </div>
+            
+        
+        </div>
+        
+        
+        <p>
+            Questo è lo span. E non so cosa dire. Rispetto al div questo lavora solamente su una linea di 
+            <span style=" 
+            background-color: yellow;
+            font-weight: bold;">
+                codice
+            </span>.
+        
+            Se vedi il "codice" è nella 
+            <span style="
+            font-size: 30px;
+            color: pink
+            ;">
+                linea 136
+            </span>
+        </p>
+    </body>
+    </html>
 
-<h2> Titolo di secondo livello</h2>
+
